@@ -20,9 +20,12 @@ repositories {
 dependencies {
     val lombok = libs.findLibrary("lombok").get().get()
 
+    val jetbrainsAnnotations = libs.findLibrary("jetbrains-annotations").get()
+
     val springBootStarter = libs.findLibrary("spring-boot-starter").get()
     val springBootStarterTest = libs.findLibrary("spring-boot-starter-test").get()
 
+    compileOnly(jetbrainsAnnotations)
     compileOnly(lombok)
     annotationProcessor(lombok)
 
