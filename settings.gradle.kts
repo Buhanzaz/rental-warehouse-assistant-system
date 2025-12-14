@@ -1,5 +1,17 @@
 rootProject.name = "rental-warehouse-assistant-system"
 
+pluginManagement {
+    repositories {
+        maven(url = "https://maven.vaadin.com/vaadin-prereleases")
+        gradlePluginPortal()
+    }
+    plugins {
+        id("com.vaadin") version providers.gradleProperty("vaadinVersion").get()
+    }
+}
+
+
+
 includeBuild("build-logic")
 
 include(

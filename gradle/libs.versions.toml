@@ -6,6 +6,8 @@ junit = "6.1.0-M1"
 lombok = "1.18.42"
 poi = "5.5.1"
 springAI = "2.0.0-M1"
+vaadin = "25.0.0-rc1"
+jetbrainsAnnotations = "26.0.2-1"
 
 
 [libraries]
@@ -17,8 +19,10 @@ spring-boot-gradle-plugin = { module = "org.springframework.boot:spring-boot-gra
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
 spring-ai-starter = { module = "org.springframework.ai:spring-ai-starter", version.ref = "springAI" }
 apache-poi = { module = "org.apache.poi:poi-ooxml", version.ref = "poi" }
+jetbrains-annotations = { module = "org.jetbrains:annotations", version.ref = "jetbrainsAnnotations" }
 
 [plugins]
 spring-boot = { id = "org.springframework.boot", version.ref = "springBoot" }
 spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "springDependencyManagement" }
 versions = { id = "com.github.ben-manes.versions", version = "0.53.0" }
+vaadin = { id = "com.vaadin", version.ref = "vaadin" }
