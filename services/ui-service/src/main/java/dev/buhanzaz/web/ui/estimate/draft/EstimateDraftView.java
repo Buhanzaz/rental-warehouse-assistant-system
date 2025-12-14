@@ -11,7 +11,7 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteParam;
 import dev.buhanzaz.web.domain.EstimateDraft;
-import dev.buhanzaz.web.service.EstimateDraftClient;
+import dev.buhanzaz.web.client.EstimateDraftClient;
 import dev.buhanzaz.web.ui.estimate.full.EstimateCreateView;
 
 @Route("estimate/draft/list")

@@ -1,6 +1,6 @@
 package dev.buhanzaz.web.config;
 
-import dev.buhanzaz.web.service.ImageStorageClient;
+import dev.buhanzaz.web.client.ImageStorageClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestClient;

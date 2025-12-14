@@ -14,8 +14,8 @@ import dev.buhanzaz.web.domain.EstimateDraft;
 import dev.buhanzaz.web.dto.image.DeleteFolderRequestDto;
 import dev.buhanzaz.web.dto.image.DeleteImageRequestDto;
 import dev.buhanzaz.web.dto.image.UploadImageRequestDto;
-import dev.buhanzaz.web.service.EstimateDraftClient;
-import dev.buhanzaz.web.service.ImageStorageClient;
+import dev.buhanzaz.web.client.EstimateDraftClient;
+import dev.buhanzaz.web.client.ImageStorageClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ByteArrayResource;
 
@@ -109,7 +109,7 @@ public class EstimateDraftCreateView extends VerticalLayout {
                 }
         );
     }
-    
+
     private Component createFooter() {
         HorizontalLayout horizontalLayout = new HorizontalLayout(
                 new Button("Сохаранить черновик", _ -> {

@@ -11,7 +11,7 @@ import com.vaadin.flow.spring.annotation.SpringComponent;
 import com.vaadin.flow.spring.annotation.UIScope;
 import dev.buhanzaz.web.dto.chat.ChatRequestDto;
 import dev.buhanzaz.web.dto.chat.ChatResponseDto;
-import dev.buhanzaz.web.service.LLMClient;
+import dev.buhanzaz.web.client.LLMClient;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.time.Instant;

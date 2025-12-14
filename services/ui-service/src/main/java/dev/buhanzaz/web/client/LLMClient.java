@@ -1,4 +1,4 @@
-package dev.buhanzaz.web.service;
+package dev.buhanzaz.web.client;
 
 import dev.buhanzaz.web.dto.chat.ChatRequestDto;
 import dev.buhanzaz.web.dto.chat.ChatResponseDto;

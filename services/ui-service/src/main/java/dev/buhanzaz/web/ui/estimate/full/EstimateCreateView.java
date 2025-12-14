@@ -8,8 +8,8 @@ import com.vaadin.flow.router.BeforeEnterObserver;
 import com.vaadin.flow.router.Route;
 import dev.buhanzaz.web.domain.EstimateDraft;
 import dev.buhanzaz.web.dto.image.GetImagesBatchRequestDto;
-import dev.buhanzaz.web.service.EstimateDraftClient;
-import dev.buhanzaz.web.service.ImageStorageClient;
+import dev.buhanzaz.web.client.EstimateDraftClient;
+import dev.buhanzaz.web.client.ImageStorageClient;
 import dev.buhanzaz.web.ui.estimate.component.ChatBot;
 import dev.buhanzaz.web.ui.estimate.component.ImageSlider;
 
