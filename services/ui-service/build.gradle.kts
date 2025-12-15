@@ -1,6 +1,6 @@
 plugins {
     id("spring-boot-common-conventions")
-    libs.plugins.vaadin
+    alias(libs.plugins.vaadin)
 }
 
 repositories {
@@ -20,16 +20,17 @@ configurations {
 }
 
 dependencies {
-
-    implementation("com.vaadin:vaadin-spring-boot-starter")
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
-    testImplementation("org.springframework.boot:spring-boot-starter-test") {
-        exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
-    }
+    implementation(libs.vaadin.dev)
+    implementation(libs.vaadin.spring.boot.starter)
+    developmentOnly(libs.spring.boot.devtools)
 }
 
 dependencyManagement {
     imports {
         mavenBom("com.vaadin:vaadin-bom:${property("vaadinVersion")}")
     }
+}
+
+tasks.named("processResources") {
+    dependsOn("vaadinPrepareFrontend")
 }
