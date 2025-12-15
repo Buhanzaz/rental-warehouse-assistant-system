@@ -22,7 +22,7 @@ dependencies {
 
     val jetbrainsAnnotations = libs.findLibrary("jetbrains-annotations").get()
 
-    val springBootStarter = libs.findLibrary("spring-boot-starter").get()
+    val springBootStarter = libs.findLibrary("spring-boot-starter-web").get()
     val springBootStarterTest = libs.findLibrary("spring-boot-starter-test").get()
 
     compileOnly(jetbrainsAnnotations)

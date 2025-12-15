@@ -14,7 +14,7 @@ jetbrainsAnnotations = "26.0.2-1"
 junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
 lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
-spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter" }
+spring-boot-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
 spring-boot-gradle-plugin = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "springBoot" }
 spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-starter-test" }
 spring-ai-starter = { module = "org.springframework.ai:spring-ai-starter", version.ref = "springAI" }
