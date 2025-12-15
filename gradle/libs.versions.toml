@@ -20,6 +20,9 @@ spring-boot-starter-test = { module = "org.springframework.boot:spring-boot-star
 spring-ai-starter = { module = "org.springframework.ai:spring-ai-starter", version.ref = "springAI" }
 apache-poi = { module = "org.apache.poi:poi-ooxml", version.ref = "poi" }
 jetbrains-annotations = { module = "org.jetbrains:annotations", version.ref = "jetbrainsAnnotations" }
+vaadin-dev = { module = "com.vaadin:vaadin-dev", version.ref = "vaadin" }
+vaadin-spring-boot-starter = {module = "com.vaadin:vaadin-spring-boot-starter", version.ref = "vaadin" }
+spring-boot-devtools = {module = "org.springframework.boot:spring-boot-devtools", version.ref = "springBoot" }
 
 [plugins]
 spring-boot = { id = "org.springframework.boot", version.ref = "springBoot" }
