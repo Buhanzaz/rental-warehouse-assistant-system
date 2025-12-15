@@ -11,7 +11,7 @@ import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 public class EstimateDraftClientConfig {
 
     @Bean
-    public EstimateDraftClient llmService() {
+    public EstimateDraftClient estimateDraftClient() {
         RestClient restClient = RestClient.builder()
                 .baseUrl("http://localhost:8082") // URL сервиса с LLM
                 .build();

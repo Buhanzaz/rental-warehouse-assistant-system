@@ -11,7 +11,7 @@ import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 public class ImageStorageClientConfig {
 
     @Bean
-    public ImageStorageClient llmService() {
+    public ImageStorageClient imageStorageClient() {
         RestClient restClient = RestClient.builder()
                 .baseUrl("http://localhost:8083") // URL сервиса с LLM
                 .build();

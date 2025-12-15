@@ -11,7 +11,7 @@ import org.springframework.web.service.invoker.HttpServiceProxyFactory;
 public class LLMClientConfig {
 
     @Bean
-    public LLMClient llmService() {
+    public LLMClient llmClient() {
         RestClient restClient = RestClient.builder()
                 .baseUrl("http://localhost:8081") // URL сервиса с LLM
                 .build();
